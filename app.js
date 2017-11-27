@@ -9,8 +9,7 @@ const methodOverride = require('method-override')
 const helmet = require('helmet')
 const hpp = require('hpp')
 
-const index = require('./routes/index')
-const users = require('./routes/users')
+const { nonRegisteredRouter } = require('./routes')
 
 const app = express()
 
@@ -44,8 +43,7 @@ app
   .use(helmet.noSniff())
   .use(hpp())
 
-app.use('/', index)
-app.use('/users', users)
+app.use(nonRegisteredRouter)
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

@@ -4,16 +4,16 @@
     "password": null,
     "database": "nodepg",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "test": {
     "username": "antoinelin",
     "password": null,
     "database": "nodepg",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "production": {
-    "dialect": "mysql"
+    "dialect": "postgres"
   }
 }
