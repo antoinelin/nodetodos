@@ -1,0 +1,19 @@
+{
+  "development": {
+    "username": "antoinelin",
+    "password": null,
+    "database": "nodepg",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "antoinelin",
+    "password": null,
+    "database": "nodepg",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "dialect": "mysql"
+  }
+}
